@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.testnet]
+helloworld = "4uyEyWgfZBEB64w5szdvARAxeAqofbWWWXzqsz7io7aN"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "testnet"
+wallet = "./wallets/account2.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
